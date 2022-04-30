@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./styles/globalStyles";
+import Theme from "./theme/Theme.styled";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styled from "styled-components";
+import Navbar from "./components/Navbar/Navbar";
+
+const Hello = styled.h1`
+  font-weight: normal;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  color: ${props => props.theme.colors.orange};
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={Theme}>
+      <BrowserRouter>
+        <GlobalStyle />
+        <Routes>
+          <Route path="/" element={<Navbar />} />
+        </Routes>
+        <Hello>Hello World</Hello>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
