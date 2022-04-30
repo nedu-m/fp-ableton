@@ -39,17 +39,17 @@ const Navbar = () => {
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/">
+              <MenuLink to="/" onClick={handleToggle}>
                 Who we are
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/">
+              <MenuLink to="/" onClick={handleToggle}>
                 Being here
               </MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/">
+              <MenuLink to="/" onClick={handleToggle}>
                 Careers
               </MenuLink>
             </MenuItem>

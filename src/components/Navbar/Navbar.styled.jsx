@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from './Container.styled';
+import { Container } from '../../styles/Container.styled';
 
 export const Nav = styled.nav`
   display: flex;
@@ -30,6 +30,7 @@ export const NavLogo = styled(Link)`
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     display: block;
+    font-size: 1.49em;
   }
 `;
 
@@ -43,7 +44,7 @@ export const MenuIcon = styled.div`
     right: 0;
     transform: translate(-60%, 20%);
     font-size: 2.2rem;
-    padding-top: 0.5rem;
+    padding-top: 0.2rem;
     margin:-35px 0 -5px 0;
     overflow-x: hidden;
   }
@@ -59,17 +60,21 @@ export const Menu = styled.ul`
     position: absolute;
     flex-direction: column;
     width: 100%;
+    height: 100vh;
     top: 50px;
-    right: ${({ toggle }) => toggle ? '0' : '-100%'};
+    right: 50px;
+    left: ${({ toggle }) => toggle ? '0' : '-100%'};
     transition: all 0.7s ease;
-    background: blue;
     overflow-x: hidden;
+    background: blue;
+    opacity: 1;
   }
 `;
 
 export const MenuItem = styled.li`
   list-style: none;
-  height: 80px;
+  height: 66px;
+  margin-left: 48px;
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     width: 100%;
