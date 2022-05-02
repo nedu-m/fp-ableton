@@ -11,7 +11,7 @@ const Theme = {
   breakpoints: {
     sm: '320px',
     md: '768px',
-    lg: '1024px',
+    lg: '1440px',
   }
 }
 

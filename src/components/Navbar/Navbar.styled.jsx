@@ -5,7 +5,7 @@ import { Container } from '../../styles/Container.styled';
 export const Nav = styled.nav`
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   background: ${props => props.theme.colors.black};
   position: sticky;
   top: 0;
@@ -17,19 +17,31 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  width: 100%;
   ${Container};
+  margin: 0 5rem;
+
+  @media (max-width: ${props => props.theme.breakpoints.md}) {
+    margin: 0 0.8rem;
+  }
 `;
 
 export const NavLogo = styled(Link)`
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
   color: ${props => props.theme.colors.white};
   cursor: pointer;
-  font-size: 1.5em;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.3em;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
+  margin: 0;
 
-  @media (max-width: ${props => props.theme.breakpoints.md}) {
-    display: block;
+  @media (max-width: ${props => props.theme.breakpoints.sm}) {
+    display: absolute;
     font-size: 1.49em;
   }
 `;
@@ -43,9 +55,10 @@ export const MenuIcon = styled.div`
     position: absolute;
     right: 0;
     transform: translate(-60%, 20%);
-    font-size: 2.2rem;
+    font-size: 2.02rem;
     padding-top: 0.2rem;
-    margin:-35px 0 -5px 0;
+    margin-top:-1.90625rem;
+    margin-right: -0.4rem;
     overflow-x: hidden;
   }
 `;

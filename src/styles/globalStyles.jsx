@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import "@fontsource/ibm-plex-mono"
 import 'sanitize.css';
 
+
+
 const GlobalStyle = createGlobalStyle`
 /* General Styles */
   body {
@@ -11,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     background: ${props => props.theme.colors.black};
   }
+}
 `;
 
 export default GlobalStyle;

@@ -26,7 +26,7 @@ const Navbar = () => {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
-            Instrument
+            instrument
           </NavLogo>
           <MenuIcon toggle={toggle} onClick={handleToggle}>
             {toggle ? <BiX /> : <BiMenu />}
