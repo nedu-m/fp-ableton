@@ -1,0 +1,24 @@
+import styled from 'styled-components';
+import { FiArrowRight } from "react-icons/fi";
+
+export const ButtonContainer = styled.button`
+  background: ${props => props.theme.colors.white};
+  border-radius: 2rem;
+  width: 6.8125rem;
+  height: 2.1875rem;
+  border: none;
+
+  @media screen and (min-width: ${props => props.theme.breakpoints.lg}) {
+    margin: 2rem 0 0 3.3rem;
+  }
+`;
+
+export const ButtonLink = styled.a`
+  color: ${props => props.theme.colors.black};
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  font-family: 'Lexend Deca', sans-serif;
+`;
+

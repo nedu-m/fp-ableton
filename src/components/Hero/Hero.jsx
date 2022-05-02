@@ -1,5 +1,6 @@
 import { Header, HeroText } from './Hero.styled';
 import { Container } from '../../styles/Container.styled';
+import { ButtonLink, ButtonContainer } from '../Button/Button';
 
 
 const Hero = () => {
@@ -12,7 +13,10 @@ const Hero = () => {
       We are investing $3 million over the next three years in our
       Build|Grow|Serve program, created to support and empower Black and
       underrepresented communities.
-    </HeroText>
+      </HeroText>
+      <ButtonContainer>
+        <ButtonLink to="/">Learn More</ButtonLink>
+      </ButtonContainer>
     </Container>
   )
 };
