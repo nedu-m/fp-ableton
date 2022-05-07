@@ -1,26 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
+import '@slightlyoff/lite-vimeo';
 
 const VideoContainer = styled.div`
   top: 2rem;
-  margin-bottom: 3rem;
+  margin:0 0 2rem 1.2rem;
   position: relative;
-  display: grid;
-  place-items: center;
   overflow-x: hidden;
+  padding: 3.5rem;
+
+@media screen and (width: 768px) {
+    padding: 0.6rem 0;
+    margin: 1rem;
+  }
+
+  @media screen and (max-width: 760px) {
+    padding: 0;
+    margin: 0;
+  }
 `;
 
-const VideoContainerInner = styled.iframe`
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-`
 
 const Videoplayer = () => {
   return (
     <VideoContainer>
-      <VideoContainerInner src='https://player.vimeo.com/video/428281636?h=be0963aaa9&amp;app_id=122963' />
+      <lite-vimeo
+        videoid="428281636"
+        frameBorder="0"
+      >
+      </lite-vimeo>
     </VideoContainer>
   )
 }

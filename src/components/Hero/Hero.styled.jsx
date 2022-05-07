@@ -21,7 +21,7 @@ export const Header = styled.header`
 `;
 
 export const HeroText = styled.p`
-  font-family: 'Lexend Deca';
+  font-family: 'Outfit';
   font-weight: 300;
   font-size: 1.12em;
   text-transform: capitalize;

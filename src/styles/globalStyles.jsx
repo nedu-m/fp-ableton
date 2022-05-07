@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import "@fontsource/ibm-plex-mono"
+import "@fontsource/outfit"
 import 'sanitize.css';
 
 

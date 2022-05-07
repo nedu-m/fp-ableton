@@ -7,14 +7,14 @@ export const ButtonContainer = styled.button`
   width: 6.8125rem;
   height: 2.1875rem;
   border: none;
-  margin: 0.4rem;
+  margin: 0.4rem 0;
 
   @media (width: 1024px) {
     margin-left: 58.56px;
   }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.lg}) {
-    margin: 2rem 0 0 3.3rem;
+    margin: 0.6rem 0 0 3.3rem;
   }
 `;
 
