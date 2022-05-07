@@ -27,6 +27,7 @@ export const HeroText = styled.p`
   text-transform: capitalize;
   letter-spacing: normal;
   color: white;
+  word-spacing: normal;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.lg}) {
     word-wrap: break-word;

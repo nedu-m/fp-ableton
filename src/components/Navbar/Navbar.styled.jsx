@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   height: 80px;
+  z-index: 999;
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -87,7 +88,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
   list-style: none;
   height: 66px;
-  margin-left: 48px;
+  margin-left: 15px;
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     width: 100%;
@@ -97,16 +98,16 @@ export const MenuItem = styled.li`
 export const MenuLink = styled(Link)`
   text-decoration: none;
   color: ${props => props.theme.colors.white};
-  font-weight: normal;
-  font-size: 0.9em;
+  font-weight: 400;
+  font-size: 1em;
   text-transform: uppercase;
-  letter-spacing: normal;
+  letter-spacing: 0.4px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 2rem;
   height: 100%;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease-in-out;
 
   @media (max-width: ${props => props.theme.breakpoints.md}) {
     display: block;

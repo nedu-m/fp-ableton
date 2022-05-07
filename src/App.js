@@ -4,6 +4,7 @@ import Theme from "./theme/Theme.styled";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import Videoplayer from "./components/Videoplayer/Videoplayer";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Hero />
+      <Videoplayer />
     </ThemeProvider>
   );
 }
