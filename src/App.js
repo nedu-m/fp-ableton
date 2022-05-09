@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Videoplayer from "./components/Videoplayer/Videoplayer";
 import BackgroundText from "./components/BackgroundText/BackgroundText";
+import Works from "./components/Works/Works";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Hero />
       <Videoplayer />
       <BackgroundText />
+      <Works />
     </ThemeProvider>
   );
 }
