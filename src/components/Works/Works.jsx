@@ -7,9 +7,15 @@ import {
   WorkDescription
 } from "./Works.styled";
 
+import {
+  ButtonIcon,
+  ButtonLink,
+  ButtonContainer
+} from '../Button/Button';
+
 import firstImage from "../../assets/images/image1.png";
-// import SecondImage from "../../assets/images/image2.png";
-// import thirdImage from "../../assets/images/image3.png";
+import secondImage from "../../assets/images/image2.jpg";
+// import thirdImage from "../../assets/images/image3.jpg";
 
 const Works = () => {
   return (
@@ -23,6 +29,10 @@ const Works = () => {
           and committed to doing so annually. One year later, we are pleased to share an update on our goals,
           our progress, and the work that still needs to be done.
         </WorkDescription>
+        <ButtonContainer>
+          <ButtonLink to="/">Learn More</ButtonLink>
+          <ButtonIcon />
+        </ButtonContainer>
       </WorkDescriptionContainer>
     </WorkContainer>
   )

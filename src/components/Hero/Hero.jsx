@@ -1,6 +1,10 @@
 import { Header, HeroText } from './Hero.styled';
 import { Container } from '../../styles/Container.styled';
-import { ButtonLink, ButtonContainer } from '../Button/Button';
+import {
+  ButtonIcon,
+  ButtonLink,
+  ButtonContainer
+} from '../Button/Button';
 
 
 const Hero = () => {
@@ -16,6 +20,7 @@ const Hero = () => {
       </HeroText>
       <ButtonContainer>
         <ButtonLink to="/">Learn More</ButtonLink>
+        <ButtonIcon />
       </ButtonContainer>
     </Container>
   )

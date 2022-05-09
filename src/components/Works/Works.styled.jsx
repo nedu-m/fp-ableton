@@ -33,7 +33,7 @@ export const WorkImage = styled.img`
 
 export const WorkDescriptionContainer = styled.div`
   grid-column: 7/10;
-  padding: 0.2rem 0.5rem 2rem 0.997rem;
+  padding: 0.2rem 0.3rem 2rem 0.97rem;
 
   @media (max-width: 768px) {
     grid-column: 1/10;
@@ -45,11 +45,13 @@ export const WorkDescription = styled.p`
   font-weight: 400;
   font-family: "Outfit", sans-serif;
   color: #fff;
-  text-align: justify;
+  text-align: start;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
-    margin: 1rem 0.5rem 1.8rem 1.9rem;
+    text-justify: end;
+    font-size: calc(1.8rem - 1.5vw);
+    inline-size: 100%;
+    margin: 1rem 0.5rem 1.9rem 0.7rem;
     line-height: 1.7rem;
     letter-spacing: calc(normal + 0.2rem);
   }
