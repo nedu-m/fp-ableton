@@ -6,7 +6,7 @@ export const ButtonContainer = styled.button`
   flex-direction: row;
   place-content: center;
   align-items: center;
-  gap: 0.56rem;
+  gap: 0.66rem;
   background: ${props => props.theme.colors.white};
   border-radius: 2rem;
   width: 9rem;
@@ -32,10 +32,12 @@ export const ButtonLink = styled.a`
   font-weight: 400;
   font-size: 0.9rem;
   font-family: 'Lexend Deca', sans-serif;
+  gap: 0.6rem;
 `;
 
 export const ButtonIcon = styled(FiArrowRight)`
   font-size: 0.8rem;
-  display: flex;
+  display: center;
   place-content: center;
+  margin-top: 0.2rem;
 `;

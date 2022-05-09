@@ -25,6 +25,7 @@ export const WorkImage = styled.img`
   width: 50vw;
   border: 0;
   grid-row-start: 1;
+  grid-auto-flow: dense;
 
   @media (max-width: 768px) {
     width: calc(100% + 60vw);
