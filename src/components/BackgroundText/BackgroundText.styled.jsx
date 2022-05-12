@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const BgTextContainer = styled.div`
   margin: 5rem 0.5rem 5rem 0.5rem;
-  padding: 1rem 9rem 1rem 9rem;
+  padding: 1rem 9rem 10rem 9rem;
   @media screen and (max-width: ${props => props.theme.breakpoints.md}) {
     margin-left: 1rem;
     padding: 0;

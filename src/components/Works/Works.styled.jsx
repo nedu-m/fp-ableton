@@ -14,6 +14,7 @@ export const WorkImageContainer = styled.section`
   grid-column: 1/5;
   grid-row: 1/2;
   padding-left: 4.8rem;
+  padding-bottom: 20rem;
 
   @media (max-width: 768px) {
     padding: 1rem 1rem 0.1rem 1rem;
@@ -35,6 +36,11 @@ export const WorkImage = styled.img`
 export const WorkDescriptionContainer = styled.div`
   grid-column: 7/10;
   padding: 0.2rem 0.3rem 2rem 0.97rem;
+  
+
+  @media (max-width: 1024px) {
+    text-align: justify;
+  }
 
   @media (max-width: 768px) {
     grid-column: 1/10;
@@ -50,7 +56,7 @@ export const WorkDescription = styled.p`
 
   @media (max-width: 768px) {
     text-justify: end;
-    font-size: calc(1.8rem - 1.5vw);
+    font-size: calc(1.5rem - 1.2vw);
     inline-size: 100%;
     margin: 1rem 0.5rem 1.9rem 0.7rem;
     line-height: 1.7rem;
