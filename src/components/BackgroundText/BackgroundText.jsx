@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BgTextContainer,
   BgTextContent
@@ -8,7 +7,7 @@ const BackgroundText = () => {
   return (
     <BgTextContainer>
       <BgTextContent>
-        We enrich human lives through the thoughtful application 
+        We enrich human lives through the thoughtful application
         of design and technology
       </BgTextContent>
     </BgTextContainer>
