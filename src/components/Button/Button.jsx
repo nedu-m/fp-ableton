@@ -23,6 +23,11 @@ export const ButtonContainer = styled.button`
   }
 `;
 
+export const NewButtonContainer = styled(ButtonContainer)`
+  @media (min-width: 1440px) {
+    margin-left: -0.1rem;
+  }
+`
 export const ButtonLink = styled.a`
   display: flex;
   place-content: center;

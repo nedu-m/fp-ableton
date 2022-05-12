@@ -3,10 +3,12 @@ import styled from 'styled-components';
 export const WorkContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  gap: 2rem;
+  gap: 4.6rem;
+  padding-bottom: 3rem;
 
   @media (max-width: 768px) {
     gap: 0.2rem;
+    padding-bottom: 0;
   }
 `;
 
@@ -58,7 +60,7 @@ export const WorkDescription = styled.p`
     text-justify: end;
     font-size: calc(1.5rem - 1.2vw);
     inline-size: 100%;
-    margin: 1rem 0.5rem 1.9rem 0.7rem;
+    margin: 1rem 0.5rem 1.9rem 0;
     line-height: 1.7rem;
     letter-spacing: calc(normal + 0.2rem);
   }

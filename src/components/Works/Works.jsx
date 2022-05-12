@@ -10,7 +10,8 @@ import {
 import {
   ButtonIcon,
   ButtonLink,
-  ButtonContainer
+  ButtonContainer,
+  NewButtonContainer
 } from '../Button/Button';
 
 import { worksData } from "./data";
@@ -22,7 +23,7 @@ import { worksData } from "./data";
 const Works = () => {
   const [tab, setTab] = React.useState(0);
 
-  const handleTab = (index) => { 
+  const handleTab = (index) => {
     setTab(index);
   };
 
@@ -40,12 +41,12 @@ const Works = () => {
             </WorkImageContainer>
             <WorkDescriptionContainer>
               <WorkDescription>{work.description}</WorkDescription>
-              <ButtonContainer>
+              <NewButtonContainer>
                 <ButtonLink>
                   Learn more
                   <ButtonIcon />
                 </ButtonLink>
-              </ButtonContainer>
+              </NewButtonContainer>
             </WorkDescriptionContainer>
           </WorkContainer>
         )
