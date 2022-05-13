@@ -23,16 +23,16 @@ export const ButtonContainer = styled.button`
   }
 `;
 
-export const WorkButtonContainer = styled(ButtonContainer)`
+export const ExploreButtonContainer = styled(ButtonContainer)`
   @media (max-width: 768px) {
     margin-left: -11.3rem;
   }
   @media (width: 320px) {
-    margin-left: -7.73rem;
+    margin-left: -6.73rem;
   }
 `
 
-export const NewButtonContainer = styled(ButtonContainer)`
+export const WorkButtonContainer = styled(ButtonContainer)`
   @media (min-width: 1440px) {
     margin-left: -0.1rem;
   }

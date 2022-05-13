@@ -4,7 +4,7 @@ import {
 } from './Explore.styled.jsx'
 
 import {
-  WorkButtonContainer,
+  ExploreButtonContainer,
   ExploreButtonLink,
   ButtonIcon
 } from '../Button/Button';
@@ -15,12 +15,12 @@ const Explore = () => {
       <ExploreContent>
         Explore a few of our most impactful projects
       </ExploreContent>
-      <WorkButtonContainer>
+      <ExploreButtonContainer>
         <ExploreButtonLink>
           Our works
           <ButtonIcon />
         </ExploreButtonLink>
-      </WorkButtonContainer>
+      </ExploreButtonContainer>
     </ExploreContainer>
   )
 };

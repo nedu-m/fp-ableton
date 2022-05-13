@@ -11,7 +11,7 @@ import {
 import {
   ButtonIcon,
   ButtonLink,
-  NewButtonContainer
+  WorkButtonContainer
 } from '../Button/Button';
 
 import { worksData } from "./data";
@@ -41,12 +41,12 @@ const Works = () => {
             </WorkImageContainer>
             <WorkDescriptionContainer>
               <WorkDescription>{work.description}</WorkDescription>
-              <NewButtonContainer>
+              <WorkButtonContainer>
                 <ButtonLink>
                   Learn more
                   <ButtonIcon />
                 </ButtonLink>
-              </NewButtonContainer>
+              </WorkButtonContainer>
             </WorkDescriptionContainer>
           </WorkContainer>
         )
