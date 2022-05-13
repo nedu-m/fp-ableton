@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
-export const WorkContainer = styled.div`
+export const WorkContainerWrapper = styled.ul`
+  padding-inline-start: 0;
+`
+
+export const WorkContainer = styled.li`
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 4.6rem;
   padding-bottom: 3rem;
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   @media (max-width: 768px) {
     gap: 0.2rem;
@@ -12,11 +19,14 @@ export const WorkContainer = styled.div`
   }
 `;
 
-export const WorkImageContainer = styled.section`
+export const WorkImageContainer = styled.div`
   grid-column: 1/5;
   grid-row: 1/2;
   padding-left: 4.8rem;
   padding-bottom: 20rem;
+  section:last-child {
+    padding-bottom: 0;
+  }
 
   @media (max-width: 768px) {
     padding: 1rem 1rem 0.1rem 1rem;
@@ -25,7 +35,7 @@ export const WorkImageContainer = styled.section`
 
 export const WorkImage = styled.img`
   order: 1;
-  width: 50vw;
+  width: 52vw;
   border: 0;
   grid-row-start: 1;
   grid-auto-flow: dense;
@@ -37,7 +47,7 @@ export const WorkImage = styled.img`
 
 export const WorkDescriptionContainer = styled.div`
   grid-column: 7/10;
-  padding: 0.2rem 0.3rem 2rem 0.97rem;
+  padding: 0.2rem 0.4rem 2rem 0.97rem;
   
 
   @media (max-width: 1024px) {

@@ -4,13 +4,13 @@ import {
   WorkImageContainer,
   WorkImage,
   WorkDescriptionContainer,
-  WorkDescription
+  WorkDescription,
+  WorkContainerWrapper
 } from "./Works.styled";
 
 import {
   ButtonIcon,
   ButtonLink,
-  ButtonContainer,
   NewButtonContainer
 } from '../Button/Button';
 
@@ -28,7 +28,7 @@ const Works = () => {
   };
 
   return (
-    <>
+    <WorkContainerWrapper>
       {worksData.map((work, index) => {
         return (
           <WorkContainer
@@ -51,7 +51,7 @@ const Works = () => {
           </WorkContainer>
         )
       })}
-    </>
+    </WorkContainerWrapper>
   )
 };
 

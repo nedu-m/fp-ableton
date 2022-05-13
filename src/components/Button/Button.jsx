@@ -23,6 +23,15 @@ export const ButtonContainer = styled.button`
   }
 `;
 
+export const WorkButtonContainer = styled(ButtonContainer)`
+  @media (max-width: 768px) {
+    margin-left: -11.3rem;
+  }
+  @media (width: 320px) {
+    margin-left: -7.73rem;
+  }
+`
+
 export const NewButtonContainer = styled(ButtonContainer)`
   @media (min-width: 1440px) {
     margin-left: -0.1rem;
@@ -46,3 +55,9 @@ export const ButtonIcon = styled(FiArrowRight)`
   place-content: center;
   margin-top: 0.2rem;
 `;
+
+export const ExploreButtonLink = styled(ButtonLink)`
+  @media (min-width: 1440px) {
+    margin-left: -0.1rem;
+  }
+`
