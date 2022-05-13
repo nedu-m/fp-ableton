@@ -27,8 +27,8 @@ export const ExploreButtonContainer = styled(ButtonContainer)`
   @media (max-width: 768px) {
     margin-left: -11.3rem;
   }
-  @media (width: 320px) {
-    margin-left: -6.73rem;
+  @media (max-width: 325px) {
+    margin-left: -7.83rem;
   }
 `
 
